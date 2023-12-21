@@ -215,9 +215,9 @@ background-color: #ffffd0;
         <tbody><tr>
           <td width="100%" valign="middle">
             <heading>Services</heading>
-            <ul><li><strong>Area Chair</strong>: NeurIPS 23, CVPR 23</li></ul>
+            <ul><li><strong>Area Chair</strong>: NeurIPS 23, CVPR 23, CVPR 24</li></ul>
             <ul><li><strong>Program Committee</strong>: AAAI 20, AAAI 21, WACV 21, BMVC 18</li></ul>
-            <ul><li><strong>Reviewer</strong>: CVPR, ICCV, NeurIPS, ICML, ECCV, TPAMI, TIP, TVCG...</li></ul>
+            <ul><li><strong>Reviewer</strong>: CVPR, ICCV, NeurIPS, ICML, ICLR, ECCV, TPAMI, TIP, TVCG...</li></ul>
           </td>
         </tr>
         </tbody></table>
@@ -234,8 +234,301 @@ background-color: #ffffd0;
       </tbody></table>
   
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-
+    
     <tbody>
+
+    <!-- Publication Section: AMD -->
+    <tr onmouseout="amd_stop()" onmouseover="amd_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two_vc" id="amd_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+            <source src="./pub/AMD.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+          <img id="amd_static_image" src="./pub/amd.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function amd_start() {
+            document.getElementById('amd_static_image').style.opacity = "0";
+            document.getElementById('amd_image').style.opacity = "1";
+          }
+
+          function amd_stop() {
+            document.getElementById('amd_image').style.opacity = "0";
+            document.getElementById('amd_static_image').style.opacity = "1";
+          }
+          amd_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://arxiv.org/abs/2312.12763">
+          <papertitle>AMD: Anatomical Motion Diffusion with Interpretable Motion Decomposition and Fusion</papertitle>
+        </a>
+        <br>
+        Beibei Jing,
+        <a href="https://youjiazhang.github.io/">Youjia Zhang</a>, 
+        <a href="https://skyesong38.github.io/">Zikai Song</a>,
+        Junqing Yu,
+        <strong>Wei Yang</strong>
+        <br>
+        <em>AAAI</em>, 2024 &nbsp;
+        <br> 
+        <a href="https://arxiv.org/abs/2312.12763">Paper</a>
+        /
+        <a href="xxxx">Code Comming Soon</a>
+        <p></p>
+        <p>We propose the Adaptable Motion Diffusion (AMD) model, which leverages a Large Language Model (LLM) to parse the input text into a sequence of concise and interpretable anatomical scripts that correspond to the target motion.</p>
+      </td>
+    </tr>
+
+    <!-- Publication Section: PT2I -->
+    <tr onmouseout="pt2i_stop()" onmouseover="pt2i_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two" id="pt2i_image" style="opacity: 0;"><img src="./pub/pt2i.png" width="160"></div>
+          <img id="pt2i_static_image" src="./pub/pt2i.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function pt2i_start() {
+            document.getElementById('pt2i_image').style.opacity = "1";
+          }
+
+          function pt2i_stop() {
+            document.getElementById('pt2i_image').style.opacity = "0";
+          }
+          pt2i_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://arxiv.org/abs/2309.09466">
+          <papertitle>Progressive Text-to-Image Diffusion with Soft Latent Direction</papertitle>
+        </a>
+        <br>
+        Yuteng Ye,
+        Jiale Cai,
+        Hang Zhou,
+        Guanwen Li,
+        <a href="https://youjiazhang.github.io/">Youjia Zhang</a>, 
+        <a href="https://skyesong38.github.io/">Zikai Song</a>,
+        Chenxing Gao,
+        Junqing Yu,
+        <strong>Wei Yang</strong>
+        <br>
+        <em>AAAI</em>, 2024 &nbsp;
+        <br> 
+        <a href="https://arxiv.org/abs/2309.09466">Paper</a>
+        /
+        <a href="https://github.com/babahui/Progressive-Text-to-Image">Code</a>
+        <p></p>
+        <p> We propose to harness the capabilities of a Large Language Model (LLM) to decompose text descriptions into coherent directives adhering to stringent formats and progressively generate the target image.</p>
+      </td>
+    </tr>
+
+    <!-- Publication Section: FDAP -->
+    <tr onmouseout="fdap_stop()" onmouseover="fdap_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two" id="fdap_image" style="opacity: 0;"><img src="./pub/fdap.png" width="150"></div>
+          <img id="fdap_static_image" src="./pub/fdap.png" width="150">
+        </div>
+        <script type="text/javascript">
+          function fdap_start() {
+            document.getElementById('fdap_image').style.opacity = "1";
+          }
+
+          function fdap_stop() {
+            document.getElementById('fdap_image').style.opacity = "0";
+          }
+          fdap_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://arxiv.org/abs/xxx.xxx">
+          <papertitle>Attacking Transformers with Feature Diversity Adversarial Perturbation</papertitle>
+        </a>
+        <br>
+        Chenxing Gao,
+        Hang Zhou,
+        Junqing Yu,
+        YuTeng Ye,
+        Jiale Cai,
+        Junle Wang,
+        <strong>Wei Yang</strong>
+        <br>
+        <em>AAAI</em>, 2024 &nbsp;
+        <br> 
+        <a href="https://arxiv.org/abs/2211.14742">Paper Cooming Soon</a>
+        <p></p>
+        <p>We present a label-free white-box attack approach for ViT-based models that exhibits strong transferability to various black-box models by accelerating the feature collapse.</p>
+      </td>
+    </tr>
+
+    <!-- Publication Section: DFP -->
+    <tr onmouseout="dfp_stop()" onmouseover="dfp_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two" id="dfp_image" style="opacity: 0;"><img src="./pub/dfp.png" width="160"></div>
+          <img id="dfp_static_image" src="./pub/dfp.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function dfp_start() {
+            document.getElementById('dfp_image').style.opacity = "1";
+          }
+
+          function dfp_stop() {
+            document.getElementById('dfp_image').style.opacity = "0";
+          }
+          dfp_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://arxiv.org/abs/2211.14742">
+          <papertitle>Dynamic Feature Pruning and Consolidation for Occluded Person Re-Identification</papertitle>
+        </a>
+        <br>
+        Yuteng Ye,
+        Hang Zhou,
+        Junqing Yu,
+        <a href="https://qianghu-huber.github.io/qianghuhomepage/">Qiang Hu</a>,
+        <strong>Wei Yang</strong>
+        <br>
+        <em>AAAI</em>, 2024 &nbsp;
+        <br> 
+        <a href="https://arxiv.org/abs/2211.14742">Paper</a>
+        /
+        <a href="https://github.com/babahui/FPC">Code</a>
+        <p></p>
+        <p> We propose a Feature Pruning and Consolidation (FPC) framework to circumvent explicit human structure parse, which consists of a sparse encoder, a global and local feature ranking module, and a feature consolidation decoder.</p>
+      </td>
+    </tr>
+
+    <!-- Publication Section: difftrack -->
+    <tr onmouseout="difftrack_stop()" onmouseover="difftrack_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two" id="difftrack_image" style="opacity: 0;"><img src="./pub/difftrack.png" width="160"></div>
+          <img id="difftrack_static_image" src="./pub/difftrack.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function difftrack_start() {
+            document.getElementById('difftrack_image').style.opacity = "1";
+          }
+
+          function difftrack_stop() {
+            document.getElementById('difftrack_image').style.opacity = "0";
+          }
+          difftrack_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://arxiv.org/abs/2308.09905">
+          <papertitle>DiffusionTrack: Diffusion Model For Multi-Object Tracking</papertitle>
+        </a>
+        <br>
+        Run Luo, 
+        <a href="https://skyesong38.github.io/">Zikai Song</a>,
+        Lintao Ma, 
+        Jinlin Wei, 
+        <strong>Wei Yang</strong>,
+        <a href="https://minyang.me/">Min Yang</a>
+        <br>
+        <em>AAAI</em>, 2024 &nbsp;
+        <br> 
+        <a href="https://arxiv.org/abs/2308.09905">Paper</a>
+        /
+        <a href="https://github.com/RainBowLuoCS/DiffusionTrack">Code</a>
+        <p></p>
+        <p> We formulates object detection and association jointly as a consistent denoising diffusion process from paired noise boxes to paired ground-truth boxes.</p>
+      </td>
+    </tr>
+
+    <!-- Publication Section: NeMF -->
+    <tr onmouseout="nemf_stop()" onmouseover="nemf_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two_vc" id="nemf_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+            <source src="./pub/NeMF.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+          <img id="nemf_static_image" src="./pub/NeMF.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function nemf_start() {
+            document.getElementById('nemf_static_image').style.opacity = "0";
+            document.getElementById('nemf_image').style.opacity = "1";
+          }
+
+          function nemf_stop() {
+            document.getElementById('nemf_image').style.opacity = "0";
+            document.getElementById('nemf_static_image').style.opacity = "1";
+          }
+          nemf_stop()
+        </script>
+      </td>
+
+      <td valign="middle" width="75%">
+        <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_NeMF_Inverse_Volume_Rendering_with_Neural_Microflake_Field_ICCV_2023_paper.pdf">
+          <papertitle>NeMF: Inverse Volume Rendering with Neural Microflake Field</papertitle>
+        </a>
+        <br>
+        <a href="https://youjiazhang.github.io/">Youjia Zhang</a>, 
+        Teng Xu, 
+        Junqing Yu, 
+        Yuteng Ye, 
+        Yanqing Jing, 
+        Junle Wang, 
+        <a href="http://www.yu-jingyi.com/">Jingyi Yu</a>
+        <strong>Wei Yang</strong>
+        <br>
+        <em>ICCV</em>, 2023&nbsp;
+        <br>
+        <a href="https://arxiv.org/abs/2304.00782">arXiv</a>
+        /
+        <a href="https://github.com/YoujiaZhang/NeMF">Project Page</a>
+        <p></p>
+        <p>We propose to conduct inverse volume rendering by representing a scene using microflake volume, which assumes the space is filled with infinite small flakes and light reflects or scattersat each spatial location according to microflake distributions.</p>
+      </td>
+    </tr>
+
+    <!-- Publication Section: c2f2neus -->
+    <tr onmouseout="c2f2neus_stop()" onmouseover="c2f2neus_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two" id="c2f2neus_image" style="opacity: 0;"><img src="./pub/c2f2neus.png" width="160"></div>
+          <img id="c2f2neus_static_image" src="./pub/c2f2neus.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function c2f2neus_start() {
+            document.getElementById('c2f2neus_image').style.opacity = "1";
+          }
+
+          function c2f2neus_stop() {
+            document.getElementById('c2f2neus_image').style.opacity = "0";
+          }
+          c2f2neus_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://arxiv.org/abs/2306.10003">
+          <papertitle>C2F2NeUS: Cascade Cost Frustum Fusion for High Fidelity and Generalizable Neural Surface Reconstruction</papertitle>
+        </a>
+        <br>
+        Luoyuan Xu, 
+        Tao Guan, 
+        Yuesong Wang, 
+        Wenkai Liu, 
+        Zhaojie Zeng, 
+        Junle Wang, 
+        <strong>Wei Yang</strong>
+        <br>
+        <em>ICCV</em>, 2023 &nbsp;
+        <br> 
+        <a href="https://arxiv.org/abs/2306.10003">Paper</a>
+        <p></p>
+        <p> We propose to construct per-view cost frustum and fuse cross-view frustums for finer geometry estimation.</p>
+      </td>
+    </tr>
+
     <!-- Publication Section: DreamFace -->
     <tr onmouseout="dreamface_stop()" onmouseover="dreamface_start()">
       <td align="center" valign="middle"  width="25%">
@@ -376,11 +669,11 @@ background-color: #ffffd0;
         Luoyuan Xu,
         <a href="https://github.com/RoyalVane">Yawei Luo</a>
         <br>
-        <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2023 &nbsp;
+        <em>CVPR</em>, 2023 &nbsp;
         <br>
-        arXiv /
-        video /
-        Code (Coming Soon)
+        <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_Adaptive_Patch_Deformation_for_Textureless-Resilient_Multi-View_Stereo_CVPR_2023_paper.pdf">Paper</a>
+        /
+        <a href="https://github.com/whoiszzj/APD-MVS">Code</a>
         <p></p>
         <p>We transplant the spirit of deformable convolution into the PatchMatch-based method for both memory-friendly and textureless-resilient MVS.</p>
       </td>
@@ -674,6 +967,8 @@ background-color: #ffffd0;
         Zhuo Chen, 
         Wenkai Liu, 
         <strong>Wei Yang</strong>
+        <br>
+        <em>ACM Multimedia</em>, 2022 &nbsp;
         <br> 
         <a href="https://dl.acm.org/doi/pdf/10.1145/3503161.3547926?casa_token=lbDaNtizQeUAAAAA:EGQEf4cDrdfqUY_uAckORK0Gny8NEUrNfFCTYMCPgG-cWfD_8mskpgb_FuJJQ__0_Nc9rLpvJJlgEQ">Paper</a>
         <p></p>
