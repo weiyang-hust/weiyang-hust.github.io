@@ -145,6 +145,7 @@ transition: opacity .2s ease-in-out;
 .two_vc {
   width: 160px;
   height: 160px;
+  z-index: 2;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
@@ -152,8 +153,7 @@ transition: opacity .2s ease-in-out;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  }
-  
+}
 
 .fade {
 transition: opacity .2s ease-in-out;
@@ -201,7 +201,7 @@ background-color: #ffffd0;
         </p>
         <p align="center">
           <a href="mailto:weiyangcs@hust.edu.cn">Email</a> &nbsp;/&nbsp;
-	      <a href="https://scholar.google.com/citations?user=fRjxdPgAAAAJ&amp;hl">Google Scholar</a> &nbsp;
+	      <a href="https://scholar.google.com/citations?hl=en&user=rhsNpmkAAAAJ">Google Scholar</a> &nbsp;
         </p>
         </td>
         <td width="33%">
@@ -215,7 +215,7 @@ background-color: #ffffd0;
         <tbody><tr>
           <td width="100%" valign="middle">
             <heading>Services</heading>
-            <ul><li><strong>Area Chair</strong>: NeurIPS 23, CVPR 23, CVPR 24</li></ul>
+            <ul><li><strong>Area Chair</strong>:ICML 25, ICCV 25, CVPR 25, NeurIPS 24, CVPR 24, NeurIPS 23, CVPR 23</li></ul>
             <ul><li><strong>Program Committee</strong>: AAAI 20, AAAI 21, WACV 21, BMVC 18</li></ul>
             <ul><li><strong>Reviewer</strong>: CVPR, ICCV, NeurIPS, ICML, ICLR, ECCV, TPAMI, TIP, TVCG...</li></ul>
           </td>
@@ -227,7 +227,7 @@ background-color: #ffffd0;
         <td width="100%" valign="middle">
           <heading>Research and Publications</heading>
           <p>
-            * denotes equal contribution or co-corresponding author
+            <sup>&#134</sup> denotes corresponding author
           </p>
         </td>
       </tr>
@@ -236,6 +236,308 @@ background-color: #ffffd0;
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
     
     <tbody>
+
+    <!-- Publication Section: refgs -->
+    <tr onmouseout="refgs_stop()" onmouseover="refgs_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two_vc" id="refgs_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+            <source src="./pub/refgs.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+          <img id="refgs_static_image" src="./pub/refgs.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function refgs_start() {
+            document.getElementById('refgs_static_image').style.opacity = "0";
+            document.getElementById('refgs_image').style.opacity = "1";
+          }
+
+          function refgs_stop() {
+            document.getElementById('refgs_image').style.opacity = "0";
+            document.getElementById('refgs_static_image').style.opacity = "1";
+          }
+          refgs_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://arxiv.org/abs/2412.00905">
+          <papertitle>Ref-GS: Directional Factorization for 2D Gaussian Splatting</papertitle>
+        </a>
+        <br>
+        <a href="https://youjiazhang.github.io/">Youjia Zhang</a>, 
+        <a href="https://apchenstu.github.io/">Anpei Chen</a><sup>&#134</sup>, 
+        Yumin Wan, 
+        <a href="https://skyesong38.github.io/">Zikai Song</a>,
+        Junqing Yu, 
+        <a href="https://github.com/RoyalVane">Yawei Luo</a>
+        <strong>Wei Yang</strong><sup>&#134</sup>,
+        <br>
+        <em>CVPR</em>, 2025 &nbsp;
+        <br> 
+        <a href="https://arxiv.org/abs/2412.00905">Paper</a>
+        /
+        <a href="https://ref-gs.github.io/">Project</a>
+        <p></p>
+        <p>Ref-GS builds upon the deferred rendering of Gaussian splatting and applies directional encoding to the deferred-rendered surface, effectively reducing the ambiguity between orientation and viewing angle. We introduce a spherical Mip-grid to capture varying levels of surface roughness, enabling roughness-aware Gaussian shading.</p>
+      </td>
+    </tr>
+
+    <!-- Publication Section: SF2T -->
+    <tr onmouseout="sf2t_stop()" onmouseover="sf2t_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two" id="sf2t_image" style="opacity: 0;"><img src="./pub/sf2t.png" width="160"></div>
+          <img id="sf2t_static_image" src="./pub/sf2t_0.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function sf2t_start() {
+            document.getElementById('sf2t_image').style.opacity = "1";
+          }
+
+          function sf2t_stop() {
+            document.getElementById('sf2t_image').style.opacity = "0";
+          }
+          sf2t_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://cvpr.thecvf.com/virtual/2025/poster/33524">
+          <papertitle>SF2T: Self-supervised Fragment Finetuning of Video-LLMs for Fine-Grained Understanding</papertitle>
+        </a>
+        <br>
+        Yangliu Hu, 
+        <a href="https://skyesong38.github.io/">Zikai Song</a><sup>&#134</sup>,
+        Na Feng, 
+        <a href="https://github.com/RoyalVane">Yawei Luo</a>
+        Junqing Yu
+        Yi-Ping Phoebe Chen, 
+        <strong>Wei Yang</strong><sup>&#134</sup>
+        <br>
+        <em>CVPR</em>, 2025&nbsp;
+        <br> 
+        <a href="https://cvpr.thecvf.com/virtual/2025/poster/33524">Paper</a>
+        /
+        <a href="xxx">Project</a>
+        <p></p>
+        <p>We propose the Self-Supervised Fragment Fine-Tuning (SF^2T), a novel effortless fine-tuning method, employs the rich inherent characteristics of videos for training, while unlocking more fine-grained understanding ability of Video-LLMs, along with a novel benchmark dataset, namely FineVidBench, for rigorously assessing Video-LLMs' performance at both the scene and fragment levels, offering a comprehensive evaluation of their capabilities.</p>
+      </td>
+    </tr>
+
+    <!-- Publication Section: CLAY -->
+    <tr onmouseout="clay_stop()" onmouseover="clay_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two_vc" id="clay_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+            <source src="./pub/clay.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+          <img id="clay_static_image" src="./pub/clay.jpg" width="160">
+        </div>
+        <script type="text/javascript">
+          function clay_start() {
+            document.getElementById('clay_static_image').style.opacity = "0";
+            document.getElementById('clay_image').style.opacity = "1";
+          }
+
+          function clay_stop() {
+            document.getElementById('clay_image').style.opacity = "0";
+            document.getElementById('clay_static_image').style.opacity = "1";
+          }
+          clay_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://arxiv.org/abs/2312.12763">
+          <papertitle>CLAY: A Controllable Large-scale Generative Model for Creating High-quality 3D Assets</papertitle>
+        </a>
+        <br>
+        <a href="https://zhanglongwen.com/">Longwen Zhang</a>, 
+        Ziyu Wang,
+        Qixuan Zhang,
+        Qiwei Qiu,
+        Anqi Pang, 
+        Haoran Jiang
+        <strong>Wei Yang</strong>,
+        <a href="http://xu-lan.com/">Lan Xu</a>, 
+        <a href="http://www.yu-jingyi.com/">Jingyi Yu</a>
+        <br>
+        <em>SIGGRAPH</em>, 2024 &nbsp; <font color="tomato"><strong>(Honorable Mentions)</strong></font>
+        <br> 
+        <a href="https://github.com/CLAY-3D/OpenCLAY">Project</a>
+        /
+        <a href="https://dl.acm.org/doi/pdf/10.1145/3658146">Paper</a>
+        /
+        <a href="https://hyper3d.ai/">Website</a>
+        <p></p>
+        <p>We introduce CLAY, a 3D geometry and material generator designed to effortlessly transform human imagination into intricate 3D digital structures. CLAY supports classic text or image inputs as well as 3D-aware controls from diverse primitives (multi-view images, voxels, bounding boxes, point clouds, implicit representations, etc).</p>
+      </td>
+    </tr>
+
+    <!-- Publication Section: gpd -->
+    <tr onmouseout="gpd_stop()" onmouseover="gpd_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two" id="gpd_image" style="opacity: 0;"><img src="./pub/gpd.png" width="160"></div>
+          <img id="gpd_static_image" src="./pub/gpd.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function gpd_start() {
+            document.getElementById('gpd_image').style.opacity = "1";
+          }
+
+          function gpd_stop() {
+            document.getElementById('gpd_image').style.opacity = "0";
+          }
+          gpd_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://arxiv.org/abs/2412.09026">
+          <papertitle>Video Anomaly Detection with Motion and Appearance Guided Patch Diffusion Model</papertitle>
+        </a>
+        <br>
+        Hang Zhou, 
+        Jiale Cai, 
+        Yuteng Ye, 
+        Yonghui Feng, 
+        Chenxing Gao, 
+        Junqing Yu, 
+        <a href="https://skyesong38.github.io/">Zikai Song</a><sup>&#134</sup>,
+        <strong>Wei Yang</strong>
+        <br>
+        <em>ACM MM</em>, 2024&nbsp;
+        <br> 
+        <a href="https://arxiv.org/abs/2412.09026">Paper</a>
+        <p></p>
+        <p>We introduce innovative motion and appearance conditions that are seamlessly integrated into a patch diffusion model to guide the model in generating coherent and contextually appropriate predictions for both semantic content and motion relations.</p>
+      </td>
+    </tr>
+
+    <!-- Publication Section: ALTrack -->
+    <tr onmouseout="altrack_stop()" onmouseover="altrack_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two" id="altrack_image" style="opacity: 0;"><img src="./pub/altrack.png" width="160"></div>
+          <img id="altrack_static_image" src="./pub/altrack.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function altrack_start() {
+            document.getElementById('altrack_image').style.opacity = "1";
+          }
+
+          function altrack_stop() {
+            document.getElementById('altrack_image').style.opacity = "0";
+          }
+          altrack_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://arxiv.org/abs/2407.20730">
+          <papertitle>Autogenic Language Embedding for Coherent Point Tracking</papertitle>
+        </a>
+        <br>
+        <a href="https://skyesong38.github.io/">Zikai Song</a><sup>&#134</sup>,
+        Ying Tang, 
+        Run Luo, 
+        Lintao Ma, 
+        Junqing Yu<sup>&#134</sup>, 
+        Yi-Ping Phoebe Chen, 
+        <strong>Wei Yang</strong><sup>&#134</sup>
+        <br>
+        <em>ACM MM</em>, 2024&nbsp;
+        <br> 
+        <a href="https://arxiv.org/abs/2407.20730">Paper</a>
+        /
+        <a href="https://github.com/SkyeSong38/ALTrack">Project</a>
+        <p></p>
+        <p>ALTrack is a coherent point tracking framework which designes an autogenic language embedding for visual feature enhancement, strengthens point correspondence in long-term sequences. Unlike existing visual-language schemes, our approach learns text embeddings from visual features through a dedicated mapping network, enabling seamless adaptation to various tracking tasks without explicit text annotations.</p>
+      </td>
+    </tr>
+    
+    <!-- Publication Section: CoupledMamaba -->
+    <tr onmouseout="coupledmamba_stop()" onmouseover="coupledmamba_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two" id="coupledmamba_image" style="opacity: 0;"><img src="./pub/coupledmamba_0.png" width="160"></div>
+          <img id="coupledmamba_static_image" src="./pub/coupledmamba_0.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function coupledmamba_start() {
+            document.getElementById('coupledmamba_image').style.opacity = "1";
+          }
+
+          function coupledmamba_stop() {
+            document.getElementById('coupledmamba_image').style.opacity = "0";
+          }
+          coupledmamba_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://arxiv.org/abs/2405.18014">
+          <papertitle>Coupled Mamba: Enhanced Multi-modal Fusion with Coupled State Space Model</papertitle>
+        </a>
+        <br>
+        Wenbing Li,
+        Hang Zhou,
+        Junqing Yu
+        <a href="https://skyesong38.github.io/">Zikai Song</a><sup>&#134</sup>,
+        <strong>Wei Yang</strong><sup>&#134</sup>
+        <br>
+        <em>NeurIPS</em>, 2024 &nbsp;
+        <br> 
+        <a href="https://arxiv.org/abs/2405.18014">Paper</a>
+        /
+        <a href="https://github.com/hustcselwb/coupled-mamba">Code</a>
+        <p></p>
+        <p>We propose the Coupled SSM model, which links the state chains of multiple modalities while keeping intra-modality processes independent. Our model includes an inter-modal state transition mechanism, where the current state depends on both its own chain and neighboring chains' states from the previous time step.</p>
+      </td>
+    </tr>
+
+    <!-- Publication Section: TIGER -->
+    <tr onmouseout="tiger_stop()" onmouseover="tiger_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two_vc" id="tiger_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+            <source src="./pub/tiger.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+          <img id="tiger_static_image" src="./pub/tiger.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function tiger_start() {
+            document.getElementById('tiger_static_image').style.opacity = "0";
+            document.getElementById('tiger_image').style.opacity = "1";
+          }
+
+          function tiger_stop() {
+            document.getElementById('tiger_image').style.opacity = "0";
+            document.getElementById('tiger_static_image').style.opacity = "1";
+          }
+          tiger_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://arxiv.org/abs/2405.14455">
+          <papertitle>TIGER: Text-Instructed 3D Gaussian Retrieval and Coherent Editing</papertitle>
+        </a>
+        <br>
+        Teng Xu,
+        Jiamin Chen, 
+        Peng Chen,
+        <a href="https://youjiazhang.github.io/">Youjia Zhang</a>, 
+        Junqing Yu,
+        <strong>Wei Yang</strong><sup>&#134</sup>
+        <br>
+        <em>ArXiv</em>, 2024 &nbsp;
+        <br> 
+        <a href="https://xutanxing.github.io/TIGER/">Project</a>
+        /
+        <a href="https://arxiv.org/abs/2405.14455">Paper</a>
+        <p></p>
+        <p>We propose a Coherent Score Distillation (CSD) that aggregates a 2D image editing diffusion model and a multi-view diffusion model for score distillation, producing multi-view consistent editing with much finer details.</p>
+      </td>
+    </tr>
 
     <!-- Publication Section: AMD -->
     <tr onmouseout="amd_stop()" onmouseover="amd_start()">
@@ -269,7 +571,7 @@ background-color: #ffffd0;
         <a href="https://youjiazhang.github.io/">Youjia Zhang</a>, 
         <a href="https://skyesong38.github.io/">Zikai Song</a>,
         Junqing Yu,
-        <strong>Wei Yang</strong>
+        <strong>Wei Yang</strong><sup>&#134</sup>
         <br>
         <em>AAAI</em>, 2024 &nbsp;
         <br> 
@@ -312,7 +614,7 @@ background-color: #ffffd0;
         <a href="https://skyesong38.github.io/">Zikai Song</a>,
         Chenxing Gao,
         Junqing Yu,
-        <strong>Wei Yang</strong>
+        <strong>Wei Yang</strong><sup>&#134</sup>
         <br>
         <em>AAAI</em>, 2024 &nbsp;
         <br> 
@@ -353,7 +655,7 @@ background-color: #ffffd0;
         YuTeng Ye,
         Jiale Cai,
         Junle Wang,
-        <strong>Wei Yang</strong>
+        <strong>Wei Yang</strong><sup>&#134</sup>
         <br>
         <em>AAAI</em>, 2024 &nbsp;
         <br> 
@@ -390,7 +692,7 @@ background-color: #ffffd0;
         Hang Zhou,
         Junqing Yu,
         <a href="https://qianghu-huber.github.io/qianghuhomepage/">Qiang Hu</a>,
-        <strong>Wei Yang</strong>
+        <strong>Wei Yang</strong><sup>&#134</sup>
         <br>
         <em>AAAI</em>, 2024 &nbsp;
         <br> 
@@ -478,7 +780,7 @@ background-color: #ffffd0;
         Yanqing Jing, 
         Junle Wang, 
         <a href="http://www.yu-jingyi.com/">Jingyi Yu</a>
-        <strong>Wei Yang</strong>
+        <strong>Wei Yang</strong><sup>&#134</sup>
         <br>
         <em>ICCV</em>, 2023&nbsp;
         <br>
@@ -704,9 +1006,9 @@ background-color: #ffffd0;
         <br>
         <a href="https://github.com/SkyeSong38">Zikai Song</a>, 
         Run Luo,
-        Junqing Yu,
+        Junqing Yu<sup>&#134</sup>,
         <a href="http://homepage.cs.latrobe.edu.au/ypchen/">Yi-Ping Phoebe Chen</a>,
-        <strong>Wei Yang</strong>
+        <strong>Wei Yang</strong><sup>&#134</sup>
         <br>
         <em>AAAI</em>, 2023 &nbsp;<font color="tomato"><strong>(Oral Presentation)</strong></font>
         <br>
@@ -742,8 +1044,8 @@ background-color: #ffffd0;
         </a>
         <br>
         <a href="https://github.com/henrryzh1">Hang Zhou</a>, 
-        Junqing Yu,
-        <strong>Wei Yang</strong>
+        Junqing Yu<sup>&#134</sup>,
+        <strong>Wei Yang</strong><sup>&#134</sup>
         <br>
         <em>AAAI</em>, 2023 &nbsp;<font color="tomato"><strong>(Oral Presentation)</strong></font>
         <br>
