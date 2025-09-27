@@ -237,6 +237,103 @@ background-color: #ffffd0;
     
     <tbody>
 
+    <!-- Publication Section: CAST -->
+    <tr onmouseout="cast_stop()" onmouseover="cast_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two_vc" id="cast_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+            <source src="./pub/cast.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+          <img id="cast_static_image" src="./pub/cast.jpg" width="160">
+        </div>
+        <script type="text/javascript">
+          function cast_start() {
+            document.getElementById('cast_static_image').style.opacity = "0";
+            document.getElementById('cast_image').style.opacity = "1";
+          }
+
+          function cast_stop() {
+            document.getElementById('cast_image').style.opacity = "0";
+            document.getElementById('cast_static_image').style.opacity = "1";
+          }
+          cast_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://dl.acm.org/doi/pdf/10.1145/3730841">
+          <papertitle>CAST: Component-aligned 3D Scene Reconstruction from an RGB Image</papertitle>
+        </a>
+        <br>
+        Kaixin Yao,
+        <a href="https://zhanglongwen.com/">Longwen Zhang</a>, 
+        Xinhao Yan,
+        Yan Zeng,
+        Qixuan Zhang,
+        <strong>Wei Yang</strong>,
+        <a href="http://xu-lan.com/">Lan Xu</a><sup>&#134</sup>,
+        Jiayuan Gu<sup>&#134</sup>,
+        <a href="http://www.yu-jingyi.com/">Jingyi Yu</a><sup>&#134</sup>
+        <br>
+        <em>SIGGRAPH</em>, 2025 &nbsp; <font color="tomato"><strong>(Best Paper Award)</strong></font>
+        <br> 
+        <a href="https://sites.google.com/view/cast4">Project</a>
+        /
+        <a href="https://dl.acm.org/doi/pdf/10.1145/3730841">Paper</a>
+        <p></p>
+        <p>We propose CAST, a novel method for component-aligned 3D scene recovery. CAST segments objects and estimating relative depth from the input image, inferring inter-object relations, generating occlusion-robust object geometry using point-cloud conditioning, aligning meshes via generative transformations, and enforcing physical plausibility with a relation-derived constraint graph.</p>
+      </td>
+    </tr>
+
+
+    <!-- Publication Section: BANG -->
+    <tr onmouseout="bang_stop()" onmouseover="bang_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two_vc" id="bang_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+            <source src="./pub/bang_clip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+          <img id="bang_static_image" src="./pub/bang.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function bang_start() {
+            document.getElementById('bang_static_image').style.opacity = "0";
+            document.getElementById('bang_image').style.opacity = "1";
+          }
+
+          function bang_stop() {
+            document.getElementById('bang_image').style.opacity = "0";
+            document.getElementById('bang_static_image').style.opacity = "1";
+          }
+          bang_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://dl.acm.org/doi/10.1145/3730840">
+          <papertitle>BANG: Dividing 3D Assets via Generative Exploded Dynamics</papertitle>
+        </a>
+        <br>
+        <a href="https://zhanglongwen.com/">Longwen Zhang</a>, 
+        Qixuan Zhang,
+        Haoran Jiang,
+        Yinuo Bai,
+        <strong>Wei Yang</strong>,
+        <a href="http://xu-lan.com/">Lan Xu</a><sup>&#134</sup>, 
+        <a href="http://www.yu-jingyi.com/">Jingyi Yu</a><sup>&#134</sup>
+        <br>
+        <em>SIGGRAPH</em>, 2025 &nbsp;
+        <br> 
+        <a href="https://sites.google.com/view/bang7355608">Project</a>
+        /
+        <a href="https://dl.acm.org/doi/10.1145/3730840">Paper</a>
+        /
+        <a href="https://arxiv.org/abs/2507.21493">arxiv</a>
+        <p></p>
+        <p>We introduces BANG, a novel generative approach that bridges 3D generation and reasoning, allowing for intuitive and flexible part-level decomposition of 3D objects. At the heart of BANG is "Generative Exploded Dynamics", which creates a smooth sequence of exploded states for an input geometry, progressively separating parts while preserving their geometric and semantic coherence.</p>
+      </td>
+    </tr>
+
     <!-- Publication Section: refgs -->
     <tr onmouseout="refgs_stop()" onmouseover="refgs_start()">
       <td align="center" valign="middle"  width="25%">
@@ -271,7 +368,7 @@ background-color: #ffffd0;
         <a href="https://skyesong38.github.io/">Zikai Song</a>,
         Junqing Yu, 
         <a href="https://github.com/RoyalVane">Yawei Luo</a>
-        <strong>Wei Yang</strong><sup>&#134</sup>,
+        <strong>Wei Yang</strong><sup>&#134</sup>
         <br>
         <em>CVPR</em>, 2025 &nbsp;
         <br> 
@@ -324,6 +421,52 @@ background-color: #ffffd0;
       </td>
     </tr>
 
+    <!-- Publication Section: usd -->
+    <tr onmouseout="usd_stop()" onmouseover="usd_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two_vc" id="usd_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+            <source src="./pub/usd.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+          <img id="usd_static_image" src="./pub/usd.jpg" width="160">
+        </div>
+        <script type="text/javascript">
+          function usd_start() {
+            document.getElementById('usd_static_image').style.opacity = "0";
+            document.getElementById('usd_image').style.opacity = "1";
+          }
+
+          function usd_stop() {
+            document.getElementById('usd_image').style.opacity = "0";
+            document.getElementById('usd_static_image').style.opacity = "1";
+          }
+          usd_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://arxiv.org/pdf/2312.06198">
+          <papertitle>Optimized View and Geometry Distillation from Multi-view Diffuser</papertitle>
+        </a>
+        <br>
+        <a href="https://youjiazhang.github.io/">Youjia Zhang</a>, 
+        <a href="https://skyesong38.github.io/">Zikai Song</a>,
+        Junqing Yu, 
+        <a href="https://github.com/RoyalVane">Yawei Luo</a>
+        <strong>Wei Yang</strong><sup>&#134</sup>
+        <br>
+        <em>IJCAI</em>, 2025 &nbsp;
+        <br> 
+        <a href="https://arxiv.org/pdf/2312.06198">Paper</a>
+        /
+        <a href="https://youjiazhang.github.io/USD/">Project</a>
+        /
+        <a href="https://github.com/YoujiaZhang/USD">Code</a>
+        <p></p>
+        <p>We propose the USD, which achieves consistent single-to-multi-view synthesis and geometry recovery by using a radiance-field consistency prior and Unbiased Score Distillation—injecting unconditioned 2D diffusion noise to debias optimization—followed by a two-step, object-aware denoising process that yields high-quality views for accurate geometry and texture.</p>
+      </td>
+    </tr>
+
     <!-- Publication Section: CLAY -->
     <tr onmouseout="clay_stop()" onmouseover="clay_start()">
       <td align="center" valign="middle"  width="25%">
@@ -359,8 +502,8 @@ background-color: #ffffd0;
         Anqi Pang, 
         Haoran Jiang
         <strong>Wei Yang</strong>,
-        <a href="http://xu-lan.com/">Lan Xu</a>, 
-        <a href="http://www.yu-jingyi.com/">Jingyi Yu</a>
+        <a href="http://xu-lan.com/">Lan Xu</a><sup>&#134</sup>, 
+        <a href="http://www.yu-jingyi.com/">Jingyi Yu</a><sup>&#134</sup>
         <br>
         <em>SIGGRAPH</em>, 2024 &nbsp; <font color="tomato"><strong>(Honorable Mentions)</strong></font>
         <br> 
