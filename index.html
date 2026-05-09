@@ -215,7 +215,7 @@ background-color: #ffffd0;
         <tbody><tr>
           <td width="100%" valign="middle">
             <heading>Services</heading>
-            <ul><li><strong>Area Chair</strong>: ICML 25, ICCV 25, CVPR 25, NeurIPS 24, CVPR 24, NeurIPS 23, CVPR 23</li></ul>
+            <ul><li><strong>Area Chair</strong>: CVPR 26, ECCV 26, ICML 25, ICCV 25, CVPR 25, NeurIPS 24, CVPR 24, NeurIPS 23, CVPR 23</li></ul>
             <ul><li><strong>Program Committee</strong>: AAAI 20, AAAI 21, WACV 21, BMVC 18</li></ul>
             <ul><li><strong>Reviewer</strong>: CVPR, ICCV, NeurIPS, ICML, ICLR, ECCV, TPAMI, TIP, TVCG...</li></ul>
           </td>
@@ -236,6 +236,149 @@ background-color: #ffffd0;
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
     
     <tbody>
+
+    <!-- Publication Section: LATO -->
+    <tr onmouseout="lato_stop()" onmouseover="lato_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two_vc" id="lato_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+            <source src="./pub/lato.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+          <img id="lato_static_image" src="./pub/lato.jpg" width="160">
+        </div>
+        <script type="text/javascript">
+          function lato_start() {
+            document.getElementById('lato_static_image').style.opacity = "0";
+            document.getElementById('lato_image').style.opacity = "1";
+          }
+
+          function lato_stop() {
+            document.getElementById('lato_image').style.opacity = "0";
+            document.getElementById('lato_static_image').style.opacity = "1";
+          }
+          lato_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://arxiv.org/abs/2603.06357">
+          <papertitle>LATO: 3D Mesh Flow Matching with Structured TOpology Preserving LAtents</papertitle>
+        </a>
+        <br>
+        Tianhao Zhao,
+        <a href="https://youjiazhang.github.io/">Youjia Zhang</a>, 
+        <a href="https://github.com/LoHhhha">Hang Long</a>, 
+        Jinshen Zhang, 
+        Wenbing Li, 
+        Yang Yang, 
+        Gongbo Zhang, 
+        Jozef Hladký, 
+        <a href="https://www.niessnerlab.org/">Matthias Nießner</a>, 
+        <strong>Wei Yang</strong><sup>&#134</sup>
+        <br>
+        <em>ICML</em>, 2026 &nbsp;
+        <br> 
+        <a href="https://arxiv.org/abs/2603.06357">Project</a>
+        /
+        <a href="https://arxiv.org/abs/2603.06357">ArXiv</a>
+        <p></p>
+        <p>We introduce LATO, a topology-preserving latent representation for scalable flow-matching-based generation of explicit 3D meshes. LATO encodes a mesh as a surface-anchored Vertex Displacement Field and reconstructs vertices through progressive voxel subdivision and pruning. For generation, LATO uses a two-stage flow matching process that first synthesizes structural voxels and then refines voxel-wise topology features.</p>
+      </td>
+    </tr>
+
+    <!-- Publication Section: Prism -->
+    <tr onmouseout="prism_stop()" onmouseover="prism_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two" id="prism_image" style="opacity: 0;"><img src="./pub/prism.png" width="160"></div>
+          <img id="prism_static_image" src="./pub/prism.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function prism_start() {
+            document.getElementById('prism_image').style.opacity = "1";
+          }
+
+          function prism_stop() {
+            document.getElementById('prism_image').style.opacity = "0";
+          }
+          prism_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://openreview.net/forum?id=3v5l5TepEe&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICML.cc%2F2026%2FConference%2FAuthors%23your-submissions)">
+          <papertitle>PRISM: Synergizing Vision Foundation Models via Self-organized Expert Specialization</papertitle>
+        </a>
+        <br>
+        Ying Tang, 
+        Dong Li,
+        <a href="https://youjiazhang.github.io/">Youjia Zhang</a>, 
+        <a href="https://skyesong38.github.io/">Zikai Song</a>,
+        Junqing Yu, 
+        <strong>Wei Yang</strong><sup>&#134</sup>
+        <br>
+        <em>ICML</em>, 2026&nbsp;
+        <br> 
+        <a href="https://openreview.net/forum?id=3v5l5TepEe&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICML.cc%2F2026%2FConference%2FAuthors%23your-submissions)">Paper</a>
+        /
+        <a href="xxx">Project</a>
+        <p></p>
+        <p>We introduce PRISM, a dual-stream Mixture-of-Experts framework synergizing VFMs via a two-stage paradigm: expertise deconstruction for interference-free expert specialization, and dynamic recomposition for task-specific routing.</p>
+      </td>
+    </tr>
+
+    <!-- Publication Section: MeshRipple -->
+    <tr onmouseout="meshripple_stop()" onmouseover="meshripple_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two_vc" id="meshripple_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+            <source src="./pub/meshripple.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+          <img id="meshripple_static_image" src="./pub/meshripple.jpg" width="160">
+        </div>
+        <script type="text/javascript">
+          function meshripple_start() {
+            document.getElementById('meshripple_static_image').style.opacity = "0";
+            document.getElementById('meshripple_image').style.opacity = "1";
+          }
+
+          function meshripple_stop() {
+            document.getElementById('meshripple_image').style.opacity = "0";
+            document.getElementById('meshripple_static_image').style.opacity = "1";
+          }
+          meshripple_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://maymhappy.github.io/MeshRipple/index.html">
+          <papertitle>MeshRipple: Structured Autoregressive Generation of Artist-Meshes</papertitle>
+        </a>
+        <br>
+        <a href="https://github.com/MayMhappy">Junkai Lin</a>,
+        <a href="https://github.com/LoHhhha">Hang Long</a>, 
+        Huipeng Guo,
+        Jielei Zhang,
+        Jiayi Yang,
+        Tianle Guo,
+        Yang Yang,
+        Jianwen Li,
+        Wenxiao Zhang,
+        <a href="https://www.niessnerlab.org/">Matthias Nießner</a>, 
+        <strong>Wei Yang</strong><sup>&#134</sup>
+        <br>
+        <em>CVPR</em>, 2026 &nbsp; <font color="tomato"><strong>(Highlight)</strong></font>
+        <br> 
+        <a href="https://maymhappy.github.io/MeshRipple/index.html">Project</a>
+        /
+        <a href="https://arxiv.org/abs/2512.07514">ArXiv</a>
+        /
+        <a href="https://github.com/MayMhappy/MeshRipple">Code</a>
+        /
+        <a href="https://www.youtube.com/watch?v=AHvaLslzXQU">Video</a>
+        <p></p>
+        <p>We introduce MeshRipple, a mesh generation method that expands outward from an active frontier. Utilizing topology-aware BFS tokenization, expansive prediction, and sparse-attention global memory, it efficiently resolves long-range dependencies to generate topologically complete, high-fidelity meshes that outperform current baselines.</p>
+      </td>
+    </tr>
 
     <!-- Publication Section: CAST -->
     <tr onmouseout="cast_stop()" onmouseover="cast_start()">
