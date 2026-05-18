@@ -278,9 +278,11 @@ background-color: #ffffd0;
         <br>
         <em>ICML</em>, 2026 &nbsp;
         <br> 
-        <a href="https://arxiv.org/abs/2603.06357">Project</a>
+        <a href="https://tianhaozhao668.github.io/LATO/">Project</a>
         /
         <a href="https://arxiv.org/abs/2603.06357">ArXiv</a>
+        /
+        <a href="https://github.com/TianhaoZhao668/LATO">Code</a>
         <p></p>
         <p>We introduce LATO, a topology-preserving latent representation for scalable flow-matching-based generation of explicit 3D meshes. LATO encodes a mesh as a surface-anchored Vertex Displacement Field and reconstructs vertices through progressive voxel subdivision and pruning. For generation, LATO uses a two-stage flow matching process that first synthesizes structural voxels and then refines voxel-wise topology features.</p>
       </td>
@@ -377,6 +379,46 @@ background-color: #ffffd0;
         <a href="https://www.youtube.com/watch?v=AHvaLslzXQU">Video</a>
         <p></p>
         <p>We introduce MeshRipple, a mesh generation method that expands outward from an active frontier. Utilizing topology-aware BFS tokenization, expansive prediction, and sparse-attention global memory, it efficiently resolves long-range dependencies to generate topologically complete, high-fidelity meshes that outperform current baselines.</p>
+      </td>
+    </tr>
+
+    <!-- Publication Section: LoraMixer -->
+    <tr onmouseout="loramixer_stop()" onmouseover="loramixer_start()">
+      <td align="center" valign="middle"  width="25%">
+        <div class="one">
+          <div class="two" id="loramixer_image" style="opacity: 0;"><img src="./pub/loramixer.jpg" width="160"></div>
+          <img id="loramixer_static_image" src="./pub/loramixer.jpg" width="160">
+        </div>
+        <script type="text/javascript">
+          function loramixer_start() {
+            document.getElementById('loramixer_image').style.opacity = "1";
+          }
+
+          function loramixer_stop() {
+            document.getElementById('loramixer_image').style.opacity = "0";
+          }
+          loramixer_stop()
+        </script>
+      </td>
+      <td valign="middle" width="75%">
+        <a href="https://iclr.cc/virtual/2026/poster/10010501">
+          <papertitle>LoRA-Mixer: Coordinate Modular LoRA Experts Through Serial Attention Routing</papertitle>
+        </a>
+        <br>
+        Wenbing Li,
+        <a href="https://skyesong38.github.io/">Zikai Song</a>,
+        Hang Zhou,
+        Junqing Yu,
+        Yunyao Zhang
+        <strong>Wei Yang</strong><sup>&#134</sup>
+        <br>
+        <em>ICLR</em>, 2026&nbsp;
+        <br> 
+        <a href="https://arxiv.org/html/2507.00029v1">Paper</a>
+        /
+        <a href="xxx">Code</a>
+        <p></p>
+        <p>We propose the LoRA-Mixer, a modular and lightweight MoE framework that integrates LoRA experts. The core innovation lies in replacing the projection matrices of the attention module’s input/output linear layers with dynamically routed, task-specific LoRA experts.</p>
       </td>
     </tr>
 
